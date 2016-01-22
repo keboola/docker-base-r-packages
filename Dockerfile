@@ -14,10 +14,10 @@ RUN curl http://ab-initio.mit.edu/nlopt/nlopt-2.4.2.tar.gz > /tmp/nlopt-2.4.2.ta
 	&& tar xvfz /tmp/nloptr_1.0.4.tar.gz \
 	&& head /tmp/nloptr/configure -n 3300 > /tmp/nloptr/configure.new \
 	&& echo "   ## Keboola fix to build locally" >> /tmp/nloptr/configure.new \
-	&& echo "   \$(/usr/bin/Rscript --vanilla -e \"file.copy(from='/tmp/nlopt-2.4.2.tar.gz', to='\${NLOPT_TGZ}')\")" >> /tmp/nloptr/configure.new \
+	&& echo "   \$(/usr/local/src/R/Rscript --vanilla -e \"file.copy(from='/tmp/nlopt-2.4.2.tar.gz', to='\${NLOPT_TGZ}')\")" >> /tmp/nloptr/configure.new \
 	&& tail -n +3302 /tmp/nloptr/configure >> /tmp/nloptr/configure.new \
 	&& rm -rf /tmp/nloptr/configure \ 
 	&& mv /tmp/nloptr/configure.new /tmp/nloptr/configure \ 
-	&& chmod u+x /tmp/nloptr/configure \ 
-	&& RUN R CMD INSTALL nloptr \
+	&& chmod u+x /tmp/nloptr/configure \
+	&& R CMD INSTALL nloptr \
 	&& rm -rf /tmp/nlopt-2.4.2.tar.gz /tmp/nloptr_1.0.4.tar.gz /tmp/nloptr \
