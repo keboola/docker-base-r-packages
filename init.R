@@ -1,4 +1,4 @@
-repoList <- c('https://cran.rstudio.com/', 'http://cran.us.r-project.org', 'https://cran.cnr.berkeley.edu/', 'https://cran.mtu.edu/', 'https://cran.fhcrc.org/'),
+repoList <- c('https://cran.rstudio.com/', 'http://cran.us.r-project.org', 'https://cran.cnr.berkeley.edu/', 'https://cran.mtu.edu/', 'https://cran.fhcrc.org/')
 
 # install really required packages
 install.packages(
