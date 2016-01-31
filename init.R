@@ -2,7 +2,7 @@ repoList <- c('https://cran.rstudio.com/', 'http://cran.us.r-project.org', 'http
 
 # install really required packages
 install.packages(
-	c('curl', 'DBI', 'devtools', 'git2r', 'jsonlite', 'rJava', 'RJDBC', 'roxygen2', 'rversions', 'rstudioapi'), 
+	c('Cairo', 'curl', 'DBI', 'devtools', 'git2r', 'jsonlite', 'rJava', 'RJDBC', 'roxygen2', 'rversions', 'rstudioapi'), 
 	repos = repoList,
 	dependencies = c("Depends", "Imports", "LinkingTo"), 
 	INSTALL_opts = c("--no-html")
