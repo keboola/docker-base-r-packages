@@ -1,9 +1,6 @@
-repoList <- c('https://cran.rstudio.com/', 'http://cran.us.r-project.org', 'https://cran.cnr.berkeley.edu/', 'https://cran.mtu.edu/', 'https://cran.fhcrc.org/')
-
 # install really required packages
 install.packages(
 	c('Cairo', 'curl', 'DBI', 'devtools', 'git2r', 'jsonlite', 'rJava', 'RJDBC', 'roxygen2', 'rversions', 'rstudioapi'), 
-	repos = repoList,
 	dependencies = c("Depends", "Imports", "LinkingTo"), 
 	INSTALL_opts = c("--no-html")
 )
@@ -24,13 +21,12 @@ install.packages(
 		'quantreg',
 		'R6', 'Rcpp',
 		'stringi', 'stringr', 'stats',
-		'timeDate',
+		'timeDate', 'tree'
     	'utils',
     	'whisker',
     	'xml2',
     	'zoo'
 	), 
-	repos = repoList,
 	dependencies = c("Depends", "Imports", "LinkingTo"), 
 	INSTALL_opts = c("--no-html")
 )
