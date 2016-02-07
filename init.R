@@ -21,7 +21,7 @@ install.packages(
 		'quantreg',
 		'R6', 'Rcpp',
 		'stringi', 'stringr', 'stats',
-		'timeDate', 'tree'
+		'timeDate', 'tree',
     	'utils',
     	'whisker',
     	'xml2',
