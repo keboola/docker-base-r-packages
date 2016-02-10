@@ -8,12 +8,12 @@ install.packages(
 # install some commonly used packages
 install.packages(
 	c(
-		'BH', 'brew',
+		'BH', 'brew', 'BTYD',
 		'caret', 'corrgram', 
 		'datasets', 'data.table', 'digest', 'dplyr',
 		'evaluate',
 		'forecast',
-		'gbm', 'ggplot2', 'ggvis', 'graphics', 'grDevices',
+		'gbm', 'gdata', 'ggplot2', 'ggvis', 'graphics', 'grDevices',
 		'httr',
 		'leaps',
 		'magrittr', 'mime', 'moments', 'memoise', 'methods',
