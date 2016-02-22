@@ -13,7 +13,7 @@ install.packages(
 		'datasets', 'data.table', 'digest', 'dplyr',
 		'evaluate',
 		'forecast',
-		'gbm', 'gdata', 'ggplot2', 'ggvis', 'graphics', 'grDevices',
+		'gbm', 'gdata', 'ggplot2', 'ggvis', 'graphics', 'grDevices', 'gsl',
 		'httr',
 		'leaps',
 		'magrittr', 'mime', 'moments', 'memoise', 'methods',
