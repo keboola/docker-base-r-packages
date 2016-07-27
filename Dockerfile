@@ -5,8 +5,16 @@ COPY init.R /tmp/init.R
 
 WORKDIR /tmp
 
+# Install dependencies for packages (gdal)
+RUN yum -y update \
+    && yum -y install \
+		gdal-devel \
+		proj-devel \
+		proj-epsg \
+    && yum clean all
+
 # Install some commonly used R packages 
-RUN /usr/local/src/R/Rscript /tmp/init.R
+RUN R CMD javareconf && /usr/local/src/R/Rscript /tmp/init.R
 
 # Install nloptr package
 RUN curl http://ab-initio.mit.edu/nlopt/nlopt-2.4.2.tar.gz > /tmp/nlopt-2.4.2.tar.gz \

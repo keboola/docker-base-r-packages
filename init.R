@@ -24,7 +24,7 @@ install.packages(
 		'outliers', 
 		'party', 'pamr', 'pls', 'plyr', 'pROC', 'proxy',
 		'qdap', 'quantreg',
-		'randomForest', 'RANN', 'reshape2', 'R6', 'Rcpp',
+		'randomForest', 'RANN', 'reshape2', 'R6', 'Rcpp', 'rgdal',
 		'sp', 'spls', 'sqldf', 'stringi', 'stringr', 'subselect', 'superpc', 'stats',
 		'testthat', 'timeDate', 'tree',
     	'utils',
