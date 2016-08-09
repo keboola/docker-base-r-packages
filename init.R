@@ -10,7 +10,7 @@ install.packages(
 	c(
 		'ascii', 
 		'BH', 'bitops', 'brew', 'BTYD',
-		'car', 'caret', 'caTools', 'ChannelAttribution', 'corrgram', 'Cubist',
+		'car', 'caret', 'caTools', 'corrgram', 'Cubist',
 		'datasets', 'data.table', 'data.tree', 'digest', 'ddd', 'doParallel', 'dplyr',
 		'evaluate', 'earth', 'ellipse', 'e1071',
 		'forecast', 'foreach',
@@ -24,7 +24,7 @@ install.packages(
 		'outliers', 
 		'party', 'pamr', 'pls', 'plyr', 'pROC', 'proxy',
 		'qdap', 'quantreg',
-		'randomForest', 'RANN', 'reshape2', 'R6', 'Rcpp', 'rgdal',
+		'randomForest', 'RANN', 'reshape2', 'R6', 'Rcpp', 'RcppArmadillo', 'rgdal',
 		'sp', 'spls', 'sqldf', 'stringi', 'stringr', 'subselect', 'superpc', 'stats',
 		'testthat', 'timeDate', 'tree',
     	'utils',
@@ -35,3 +35,6 @@ install.packages(
 	dependencies = c("Depends", "Imports", "LinkingTo"), 
 	INSTALL_opts = c("--no-html")
 )
+
+packageurl <- "https://cran.r-project.org/src/contrib/Archive/ChannelAttribution/ChannelAttribution_1.7.tar.gz"
+install.packages(packageurl, repos=NULL, type="source")
