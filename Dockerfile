@@ -15,8 +15,8 @@ RUN apt-get update \
 RUN R CMD javareconf && /usr/local/src/R/Rscript /tmp/init.R
 
 # Install nloptr package
-RUN curl http://ab-initio.mit.edu/nlopt/nlopt-2.4.2.tar.gz > /tmp/nlopt-2.4.2.tar.gz \
-	&& curl https://cran.r-project.org/src/contrib/nloptr_1.0.4.tar.gz > /tmp/nloptr_1.0.4.tar.gz \
+RUN curl -f http://ab-initio.mit.edu/nlopt/nlopt-2.4.2.tar.gz > /tmp/nlopt-2.4.2.tar.gz \
+	&& curl -f https://cran.r-project.org/src/contrib/nloptr_1.0.4.tar.gz > /tmp/nloptr_1.0.4.tar.gz \
 	&& tar xvfz /tmp/nloptr_1.0.4.tar.gz \
 	&& head /tmp/nloptr/configure -n 3300 > /tmp/nloptr/configure.new \
 	&& echo "   ## Keboola fix to build locally" >> /tmp/nloptr/configure.new \
