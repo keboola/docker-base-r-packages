@@ -1,4 +1,4 @@
-FROM quay.io/keboola/docker-base-r:3.3.2-a
+FROM quay.io/keboola/docker-base-r:latest
 
 COPY init.R /tmp/init.R
 
